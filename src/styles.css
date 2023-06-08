@@ -8,73 +8,6 @@ body{
     background-position:center;
     background-attachment:fixed;
 }
-
-#loginOuter{
-    display: flex;
-    align-self: center;
-    justify-self: center;
-}
-
-.loginInputGroup {
-    position:relative; 
-    margin-bottom:45px; 
-}
-
-.inputLogin{
-    font-size:18px;
-    padding:10px 10px 10px 5px;
-    display:block;
-    width:35vw;
-    border:none;
-    border-bottom:1px solid #757575;
-}
-
-.inputLogin:focus{
-    outline: none !important;
-}
-.inputLabel {
-    font-size:18px;
-    font-weight:normal;
-    position:absolute;
-    pointer-events:none;
-    left:5px;
-    top:10px;
-    transition:0.2s ease all; 
-    -moz-transition:0.2s ease all; 
-    -webkit-transition:0.2s ease all;
-}
-
-.inputLogin:focus ~ .inputLabel, .inputLogin:valid ~ .inputLabel 		{
-    top:-20px;
-    font-size:14px;
-    color:#5264AE;
-  }
-
-/*animacion*/
-.bar 	{ position:relative; display:block; width:35vw; }
-.bar:before, .bar:after 	{
-  content:'';
-  height:2px; 
-  width:0;
-  bottom:1px; 
-  position:absolute;
-  background:#5264AE; 
-  transition:0.5s ease all; 
-  -moz-transition:0.2s ease all; 
-  -webkit-transition:0.2s ease all;
-}
-.bar:before {
-  left:50%;
-}
-.bar:after {
-  right:50%; 
-}
-
-/* active state */
-.inputLogin:focus ~ .bar:before, .inputLogin:focus ~ .bar:after {
-  width:50%;
-}
-
 .loginBtnHolder{
     display: flex;
     flex-direction: row;
@@ -97,3 +30,63 @@ div > .btn{
 .clickableSvg:hover{
     cursor: pointer;
 }
+/* #loginOuter{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.loginInputGroup {
+    position:relative; 
+    margin-bottom:45px; 
+}
+
+.inputLogin{
+    font-size:18px;
+    padding:10px 10px 10px 5px;
+    display:block;
+    width:35vw;
+    border:none;
+    border-bottom:1px solid #757575;
+}
+
+.inputLogin:focus{
+    outline: none !important;
+}*/
+.inputLabel {
+  height: 5vh;
+  width: 3vw;
+  background-color: #5264AE;
+}
+/*
+.inputLogin:focus ~ .inputLabel, .inputLogin:valid ~ .inputLabel 		{
+    top:-20px;
+    font-size:14px;
+    color:#5264AE;
+  }
+
+/*animacion*/
+/* .bar 	{ position:relative; display:block; width:35vw; }
+.bar:before, .bar:after 	{
+  content:'';
+  height:2px; 
+  width:0;
+  bottom:1px; 
+  position:absolute;
+  background:#5264AE; 
+  transition:0.5s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+.bar:before {
+  left:50%;
+}
+.bar:after {
+  right:50%; 
+} */
+
+/* active state */
+/* .inputLogin:focus ~ .bar:before, .inputLogin:focus ~ .bar:after {
+  width:50%;
+} */ 
+
